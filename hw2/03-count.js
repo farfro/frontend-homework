@@ -4,6 +4,7 @@
 
 let input = document.querySelector('#word');
 let para = document.querySelector('#find');
+let body = document.querySelector('body').style.backgroundColor = 'rgb(0,95,63)';
 
 input.addEventListener('keydown', (event) => {
     if(event.key === 'Enter') {

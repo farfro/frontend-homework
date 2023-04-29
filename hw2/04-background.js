@@ -14,7 +14,7 @@ function setColor(onInter) {
     }, onInter);
 }
 
-let time = setColor(3000);
+let time;
 button.classList.add('bg-primary');
 
 button.addEventListener('click', () => {
