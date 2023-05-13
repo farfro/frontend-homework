@@ -35,8 +35,10 @@ export default function Search() {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="input-group mb-3">
+                <label htmlFor="searchInput" className="col-form-label me-2">Search character name:</label>
                 <input
                   type="text"
+                  id="searchInput"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                   className="form-control"
@@ -49,7 +51,7 @@ export default function Search() {
                 <div className="card" style={{width: "18rem"}}>
                   <img src={character.imageUrl} alt={character.fullName} className="card-img-top" />
                   <div className="card-body">
-                  <h5 className="card-title">{character.fullName}</h5>
+                  <h1 className="card-title">{character.fullName}</h1>
                   </div>
                 </div>
               )}

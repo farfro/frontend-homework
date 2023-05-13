@@ -10,7 +10,7 @@ const create = (element) => {
     title = document.createElement('p');
     div.style.width = '180px';
     img.src = element.imageUrl;
-    img.alt = element.fullName;
+    img.alt = `character: ${element.fullName}`;
     fname.textContent = element.fullName;
     title.textContent = element.title;
     title.style.marginBottom = '40px';
